@@ -1,7 +1,9 @@
 # my_blog_Django
 
 base configuration Django
+
  command important
+
  1: Creation environment virtual
  $ python -m venv env
  prendre note que cette environnement virtual n'est pas dans
@@ -11,5 +13,11 @@ base configuration Django
     pour le desactiver on fait deactivate
  
 3: update pip en faisant : pip install --upgrade pip
+
 4: install django : pip install django==version_souhaite  
     verifie l'installation c'est bien passe pip -m django --version
+
+5 : requirement.txt : geler l'environnement virtuel dans ce fichier
+    en faisant : pip freeze > requirements.txt et cat requirements.txt pour voir afficher contenu
+    
+    pour le tester: desinstaller pip uninstall django  et faire pip install -r requirements.txt pour reinstaller tout les bibliotheques
