@@ -1,6 +1,10 @@
 from django.shortcuts import render
+from datetime import datetime
 
 
 def index(request):
-    print('test ici'),
-    return render(request, 'index.html')
+    day = datetime.today()
+    return render(request, 'MyBlog/index.html', context={
+        'Name': 'Amina',
+        'date': day
+    })
